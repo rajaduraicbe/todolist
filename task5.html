@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one" onclick="deleteitem(event)">One</h1>
+    <h1 id="two" onclick="deleteitem(event)">Two</h1>
+    <h1 id="three" onclick="deleteitem(event)">Three</h1>
+    <h1 id="four" onclick="deleteitem(event)">Four</h1>
+    <h1 id="five" onclick="deleteitem(event)">Five</h1>
+    <h1 id="six" onclick="deleteitem(event)">Six</h1>
+</body>
+<script>
+    // var r1=document.getElementById("one");
+    // var r2=ducument.getElementById("two");
+    // var r3=ducument.getElementById("three");
+    // var r4=ducument.getElementById("four");
+    // var r5=ducument.getElementById("five");
+    // var r6=ducument.getElementById("six");
+
+    function deleteitem(event){
+          event.target.remove();
+    }
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <button id="Raja" onclick="show(event)">Raja</button>
+    <button id="Durai" onclick="show(event)">Durai</button>
+    <button id="gayu" onclick="show(event)">Gayu</button>
+</body>
+<script>
+    var head=document.getElementById("h1");
+    
+    function show(){
+       head.textContent=event.target.textContent;
+       }
+</script>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="todolisttask.css" />
+  </head>
+  <body>
+    <div class="raja">
+      <div>
+        <label>Name</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label>Age</label>
+        <input type="number" id="age" />
+      </div>
+      <div>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male" />Male
+        <input type="radio" name="gender" value="Female" />Female
+      </div>
+      <div>
+        <label>Course</label>
+        <select name="Course" id="course">
+          <option value=""></option>
+          <option value="Java">Java</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="MERN">MERN</option>
+          <option value="MEAN">MEAN</option>
+        </select>
+      </div>
+      <div>
+        <label>Gmail</label>
+        <input type="email" id="gmail" />
+      </div>
+      <div>
+        <button onclick="Save()">Save</button>
+      </div>
+      <div>
+        <table id="table1">
+          <tbody>
+            <tr>
+              <th>NAME</th>
+              <th>AGE</th>
+              <th>COURSE</th>
+              <th>GENDER</th>
+              <th>GMAIL</th>
+              <th>Action</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      // var table=document.querySelector("#table1")
+      function Save() {
+        var username = document.querySelector("#name").value;
+        var age = document.querySelector("#age").value;
+        var gender = document.querySelector("input[name='gender']:checked") .value ? document.querySelector("input[name='gender']:checked").value: "";
+        var course = document.querySelector("#course").value;
+        var gmail = document.querySelector("#gmail").value;
+
+
+        if (!username || !age || !gender || !course || !gmail) {
+        alert("Please fill in all fields before saving.");
+        return;
+    }
+
+
+        var data = document.createElement("tr");
+        // var tabledata=document.createElement("td")
+        data.innerHTML = `<td>${username}</td>
+                 <td>${age}</td>
+                 <td>${gender}</td>
+                 <td>${course}</td>
+                 <td>${gmail}</td>
+                 <td><button onclick="deleteRow(this)">Delete</button></td>`;
+
+        document.querySelector("#table1 tbody").appendChild(data);
+      }
+      function deleteRow(button) {
+        button.parentElement.parentElement.remove();
+      }
+    </script>
+  </body>
+</html>

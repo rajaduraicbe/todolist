@@ -1,0 +1,84 @@
+
+=> This code is part of a form validation function that checks whether an email field is correctly filled out.
+
+  1. Checking if the email field is empty:
+
+ * if (!formData.email) 
+     {
+     errors.email = "Email is required";
+     }
+
+     => !formData.email checks if the email field is empty, null, or undefined.
+
+     => If formData.email is empty, an error message "Email is required" is assigned to errors.email.
+        Validating the email format:
+
+
+  * else if (!/\S+@\S+\.\S+/.test(formData.email))
+      {
+      errors.email = "Email is not valid";
+      }
+
+ 2. This runs only if the email field is not empty.
+
+    => /\S+@\S+\.\S+/ is a regular expression (RegEx) that checks if the email follows a valid format.
+
+    => .test(formData.email) checks if the email string matches the pattern.
+
+    => If the email does not match the pattern, the error message "Email is not valid" is assigned to errors.email
+
+
+
+
+ Pattern         	Meaning
+
+ \S+	      At least one non-whitespace character before @ (e.g., user)
+
+ @	      The @ symbol must be present
+
+ \S+	      At least one non-whitespace character after @ (e.g., domain)
+
+ \.	      A dot (.) must appear (e.g., .com)
+
+ \S+	      At least one non-whitespace character after the dot (e.g., com)
+
+
+3. e (Event Object):
+
+    * e is the event object that is automatically passed when an input field changes.
+    * e.target refers to the input element that triggered the change.
+    * e.target.name gives the name attribute of the input.
+    * e.target.value gives the current value of the input.
+
+
+
+4. Updating the State (setFormData)
+
+   =>setFormData updates the state formData using the previous state.
+
+   => { ...formData } creates a copy of the existing form data to keep all previous values.
+
+   => [e.target.name]: e.target.value dynamically updates only the field that changed.
+
+
+
+
+Git comments
+
+
+1.git init
+2.git remote add origin https://github.com/yourusername/repository-name.git
+3.git remote -v
+4.git status
+5.git add.
+6.git status
+7.git commit -m "add project"
+8.git branch -M main
+git push -u origin main
+ 
+ 
+again
+1.git add.
+2.git status
+3.git commit -m "add project"
+4.git push -u origin master

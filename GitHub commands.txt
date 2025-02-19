@@ -1,0 +1,199 @@
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+navigate the project folder in the terminal
+
+cd path/to/your/project
+
+
+git init
+
+
+git status
+
+git add .
+
+
+git add filename.ext
+
+
+git commit -m "Initial commit"
+
+
+
+git remote add origin https://github.com/your-username/repo-name.git
+
+
+
+git push -u origin main
+
+
+git pull origin main
+
+
+Create a new branch:
+
+git branch new-branch
+
+Switch to it:
+
+git checkout new-branch
+
+create and switch in one command:
+
+git checkout -b new-branch
+
+First, switch to the branch you want to merge into:
+
+git checkout main
+
+Merge another branch:
+
+git merge new-branch
+
+
+If you want to work on an existing GitHub project:
+
+git clone https://github.com/username/repository.git
+
+
+View Commit History:
+
+git log --oneline
+
+
+
+Undo the last commit but keep the changes:
+
+
+git reset --soft HEAD~1
+
+
+Undo the last commit and remove the changes:
+
+git reset --hard HEAD~1
+
+
+
+
+1. Open VS Code & Terminal
+Open VS Code.
+Open the Terminal:
+Click on View → Terminal, or
+Use the shortcut Ctrl + ` (backtick).
+2. Configure Git (First-Time Only)
+If you're using Git for the first time, set up your name and email:
+
+sh
+Copy
+Edit
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+3. Initialize a Git Repository
+Navigate to your project folder in the terminal:
+sh
+Copy
+Edit
+cd path/to/your/project
+Initialize Git in the folder:
+sh
+Copy
+Edit
+git init
+This creates a .git folder to track changes.
+4. Check Git Status
+sh
+Copy
+Edit
+git status
+This shows untracked or modified files.
+5. Add Files to Staging
+To stage all changes:
+sh
+Copy
+Edit
+git add .
+To stage a specific file:
+sh
+Copy
+Edit
+git add filename.ext
+6. Commit Changes
+Save changes with a message:
+sh
+Copy
+Edit
+git commit -m "Initial commit"
+7. Connect to Remote Repository (GitHub)
+First, create a repository on GitHub.
+Link it to your local project:
+sh
+Copy
+Edit
+git remote add origin https://github.com/your-username/repo-name.git
+8. Push Code to GitHub
+Push the committed changes to GitHub:
+sh
+Copy
+Edit
+git push -u origin main
+If you are using master instead of main, replace main with master.
+9. Pull Changes from Remote Repository
+To get the latest updates:
+sh
+Copy
+Edit
+git pull origin main
+10. Create and Switch Branches
+Create a new branch:
+sh
+Copy
+Edit
+git branch new-branch
+Switch to it:
+sh
+Copy
+Edit
+git checkout new-branch
+Or create and switch in one command:
+sh
+Copy
+Edit
+git checkout -b new-branch
+11. Merge Branches
+First, switch to the branch you want to merge into (e.g., main):
+sh
+Copy
+Edit
+git checkout main
+Merge another branch:
+sh
+Copy
+Edit
+git merge new-branch
+12. Clone an Existing Repository
+If you want to work on an existing GitHub project:
+
+sh
+Copy
+Edit
+git clone https://github.com/username/repository.git
+13. View Commit History
+sh
+Copy
+Edit
+git log --oneline
+14. Revert Changes
+Undo the last commit but keep the changes:
+sh
+Copy
+Edit
+git reset --soft HEAD~1
+Undo the last commit and remove the changes:
+sh
+Copy
+Edit
+git reset --hard HEAD~1
+
+
+

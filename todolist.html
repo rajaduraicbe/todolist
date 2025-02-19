@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>TodoList</label>
+    <input type="text" id="todo">
+<button onclick="add()">Add</button>
+<ul id="list">
+    <li>Hello
+        <button onclick="deleted(event)">Delete</button>
+    </li>
+</ul>
+</body>
+<script>
+    //selecting the ul
+    var ul=document.querySelector("#list");
+    var todo=document.querySelector('#todo');
+    function add(){
+ //creating the element li tag 
+ var li=document.createElement("li");
+ li.innerHTML= todo.value + "<button onclick='deleted(event)'>Delete</button>";
+ ul.append(li);
+    }
+    function deleted(event)
+    {
+       event.target.parentElement.remove();
+    }
+   
+
+</script>
+</html>

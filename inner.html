@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <label>Username</label>
+    <input type="text" id="num1">
+</div>
+<div>
+    <label>Mail id</label>
+    <input type="email" id="num2">
+</div>
+    <button onclick="add()">Combain two input value</button>
+    <p id="result">Result</p>
+</body>
+<script>
+    // Selecting Input Box Username
+    var username=document.getElementById("num1");
+    // Selecting Input Box Email
+    var email=document.getElementById("num2");
+    // Selecting P tag 
+    var result=document.getElementById("result");
+
+    function add(){
+        // selecting Input value of username
+        var username_value=username.value;
+        // selecting Input value of email
+        var email_value=email.value;
+        var total=username_value+email_value;
+        result.textContent=total;
+    }
+   
+    
+</script>
+</html>

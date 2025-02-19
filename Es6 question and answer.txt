@@ -1,0 +1,33 @@
+1. Template literals?
+     
+      =>  Template strings are a feature in JavaScript (introduced in ES6) that make it easier to work with strings. They are enclosed by           backticks (`) and offer three key benefits:
+
+         *  String Interpolation: Dynamically insert variables or expressions using ${}.
+         *  Multi-line Strings: Create strings that span multiple lines without special characters.
+         *  Enhanced Readability: Avoid complex concatenations, making code cleaner and more intuitive.
+
+2. Ternary Operator?
+      
+      => The ternary operator in JavaScript is a shorthand for an if-else statement. It evaluates a condition and returns one value if the          condition is true and another if it is false.
+
+3. Destructuring in Arrays and Objects?
+
+      => Destructuring is a feature in JavaScript that allows you to unpack values from arrays or properties from objects into individual          variables in a clean and concise way.
+
+      * Array Destructuring
+
+        => Used to extract values from an array and assign them to variables based on their position.
+       
+      * Object Destructuring
+
+        => Used to extract properties from an object and assign them to variables based on their keys.
+
+4. Default Parameters?
+
+       => Default parameters allow you to set default values for function arguments in case no value or undefined is provided.
+              
+            Key Points:
+
+                  * Default parameters work only when the argument is undefined.
+
+                  * They help avoid errors caused by missing function arguments.
